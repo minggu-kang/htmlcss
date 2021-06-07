@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>여러가지 CSS 선택자</title>
+    <style>
+        p,h1{
+            color: blue;
+        }
+        #container{/*그룹 선택자 = ,(콤머) 로 구분*/
+            padding: 10px;
+            border: 5px outset red;
+            width: 600px;
+        }
+        .redText{
+            color: #ff0000; /*클래스 선택자는 여러번 사용 가능*/
+        }
+            /*철자 구분(대소문자)를 확실히 해야한다. */
+        h1{
+            color: orange !important; /*!important 절대 우선순위*/
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <!-- div id = css style 에서 # 으로 구분 . -->
+    <h1 style="color: green;">레드향</h1>
+    <p>껍질에 붉은 빛이 돌아 <span class="redText">레드향</span>이라고 불린다.</p>   
+     <!--class = .XXX로 구분 여러번 사용 가능  -->
+    <p>레드향은 한라봉과 귤을 교배한 것으로 일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+    <p><span class="redText">비타민 c와 비타민 p가 풍부해</span> 혈액 순환, 감기 예방 등에 좋은 것으로 알려져 있다.</p>    
+</div>
+</body>
+</html>

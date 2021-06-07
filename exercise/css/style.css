@@ -1,0 +1,12 @@
+h1{
+    padding: 10px;
+    background-color: #FFD9FA;
+    color: #fff;
+}
+p{
+    font-family: 굴림체;
+    font-size: 20px;
+}
+span{
+    color: red;
+}

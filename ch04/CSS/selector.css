@@ -1,0 +1,17 @@
+body{
+    font-size: 1.2em;
+}
+h1{
+    color: orange !important;
+}
+.redText{
+    color: red;
+}
+#container{
+    padding: 10px;
+    border: 10px outset red;
+    width: 800px;
+}
+p{
+    color: blue;
+}
