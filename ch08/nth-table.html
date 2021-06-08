@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조 가상 선택자 사용</title>
+    <style>
+        #container{
+            margin: 0 auto;
+
+        }
+        table{
+            
+            margin: 0 auto;
+            width: 200px;
+            border-collapse:collapse;
+        }
+        tr td{
+            border: 1px solid black;
+            padding: 10px 20px;
+            height: 50px;
+        }
+        h1{
+            text-align: center;
+        }
+        tr:nth-child(odd){
+            background-color: blanchedalmond;
+        }
+        /* 홀수=odd,2n+1 짝수=even,2n
+               345페이지 참고         */
+        tr:nth-last-child(odd){
+            background-color: hotpink;
+        }     
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>건강에 좋은 건강 식품</h1>
+        <table>
+            <tr>
+                <td>블루베리</td>
+            </tr>
+            <tr>
+                <td>귀리</td>
+            </tr>
+            <tr>
+                <td>토마토</td>
+            </tr>
+            <tr>
+                <td>시금치</td>
+            </tr>
+            <tr>
+                <td>적포도주</td>
+            </tr>
+            <tr>
+                <td>견과류</td>
+            </tr>
+            <tr>
+                <td>바나나</td>
+            </tr>
+            <tr>
+                <td>사과</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
